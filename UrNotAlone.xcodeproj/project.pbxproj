@@ -47,6 +47,7 @@
 		3DCB20B31EDF17B600D83215 /* UrNotAloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrNotAloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCB20B71EDF17B600D83215 /* UrNotAloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrNotAloneUITests.swift; sourceTree = "<group>"; };
 		3DCB20B91EDF17B600D83215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FFB1D7F1EDF4540005B785E /* UrNotAlone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UrNotAlone.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		3DCB20961EDF17B600D83215 /* UrNotAlone */ = {
 			isa = PBXGroup;
 			children = (
+				3FFB1D7F1EDF4540005B785E /* UrNotAlone.entitlements */,
 				3DCB20971EDF17B600D83215 /* AppDelegate.swift */,
 				3DCB20991EDF17B600D83215 /* ViewController.swift */,
 				3DCB209B1EDF17B600D83215 /* Main.storyboard */,
@@ -195,6 +197,14 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = SVR35L63T2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					3DCB20A71EDF17B600D83215 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -417,8 +427,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UrNotAlone/UrNotAlone.entitlements;
 				DEVELOPMENT_TEAM = SVR35L63T2;
 				INFOPLIST_FILE = UrNotAlone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = art.UrNotAlone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,8 +442,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UrNotAlone/UrNotAlone.entitlements;
 				DEVELOPMENT_TEAM = SVR35L63T2;
 				INFOPLIST_FILE = UrNotAlone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = art.UrNotAlone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,6 +460,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = SVR35L63T2;
 				INFOPLIST_FILE = UrNotAloneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = art.UrNotAloneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,6 +476,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = SVR35L63T2;
 				INFOPLIST_FILE = UrNotAloneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = art.UrNotAloneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -475,6 +491,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = SVR35L63T2;
 				INFOPLIST_FILE = UrNotAloneUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = art.UrNotAloneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -489,6 +506,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = SVR35L63T2;
 				INFOPLIST_FILE = UrNotAloneUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = art.UrNotAloneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +534,7 @@
 				3DCB20BE1EDF17B600D83215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DCB20BF1EDF17B600D83215 /* Build configuration list for PBXNativeTarget "UrNotAloneTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +543,7 @@
 				3DCB20C11EDF17B600D83215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DCB20C21EDF17B600D83215 /* Build configuration list for PBXNativeTarget "UrNotAloneUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +552,7 @@
 				3DCB20C41EDF17B600D83215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
